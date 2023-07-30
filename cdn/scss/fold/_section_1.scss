@@ -147,12 +147,17 @@
     .container_img_leonardo {
       position: relative;
       background-color: $grey3;
+      height: 80vh;
+      max-height: 600px;
       img {
         position: relative;
-        overflow: visible;
-        width: 20vw;
-        object-fit: cover;
-        bottom: 0px;
+        overflow: visible !important;
+        // width: 100vw ;
+        // min-width: 100vw;
+        // object-fit: cover;
+        bottom: 0vh !important;
+        left: 0vw;
+        transform: translateX(-40%);
       }
     }
   }

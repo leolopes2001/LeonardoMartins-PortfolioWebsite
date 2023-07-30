@@ -166,13 +166,15 @@ button {
 .section_1 .main .container_img_leonardo {
   position: relative;
   background-color: #202020;
+  height: 80vh;
+  max-height: 600px;
 }
 .section_1 .main .container_img_leonardo img {
   position: relative;
-  overflow: visible;
-  width: 20vw;
-  object-fit: cover;
-  bottom: 0px;
+  overflow: visible !important;
+  bottom: 0vh !important;
+  left: 0vw;
+  transform: translateX(-40%);
 }
 @media (min-width: 1200px) {
   .section_1 {
