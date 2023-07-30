@@ -1,0 +1,252 @@
+.center, .section_1 .main .container_content_leonardo .cv_btn, .section_1 .main .container_content_leonardo nav .link_social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html, body {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li,
+button {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  line-height: normal !important;
+}
+
+.btn {
+  color: #ffffff !important;
+}
+
+.section_1 {
+  background-color: #3f3f3f;
+  max-height: 1100px;
+  overflow: hidden;
+  min-height: 100vh;
+}
+.section_1 .header nav {
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999999999;
+  top: 2vw;
+  gap: 5vw;
+}
+.section_1 .header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.section_1 .main .container_content_leonardo {
+  background-color: #202020;
+  z-index: 30 !important;
+  position: relative;
+}
+.section_1 .main .container_content_leonardo .title_container .name {
+  color: #3c5bff;
+  font-weight: 800;
+  font-size: clamp(24px, 8vw, 38px) !important;
+  position: relative;
+  margin-bottom: 0.7rem !important;
+}
+.section_1 .main .container_content_leonardo .title_container .name::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  max-width: 478px;
+  bottom: -7px;
+  left: 60px;
+  height: 4px;
+  background-color: #3c5bff;
+}
+@media (min-width: 982px) {
+  .section_1 .main .container_content_leonardo .title_container .name {
+    font-size: 2.5vw !important;
+    margin-bottom: 0.6vw !important;
+  }
+  .section_1 .main .container_content_leonardo .title_container .name::after {
+    width: 80%;
+    max-width: 24vw;
+    bottom: -0.5vw;
+    left: 60px;
+    height: 0.3vw;
+    background-color: #3c5bff;
+  }
+}
+.section_1 .main .container_content_leonardo .title_container .work {
+  font-size: clamp(24px, 8vw, 38px) !important;
+  color: #ffffff;
+  font-weight: 700 !important;
+}
+@media (min-width: 982px) {
+  .section_1 .main .container_content_leonardo .title_container .work {
+    font-size: 2.6vw !important;
+  }
+}
+.section_1 .main .container_content_leonardo .container_about p {
+  color: #8f8f8f;
+  font-size: clamp(10px, 4vw, 15px);
+  font-weight: 500;
+  margin-top: 1vh !important;
+  margin-bottom: 2vh !important;
+  max-width: 396px;
+}
+@media (min-width: 982px) {
+  .section_1 .main .container_content_leonardo .container_about p {
+    font-size: 1vw !important;
+    max-width: 25vw;
+  }
+}
+.section_1 .main .container_content_leonardo nav {
+  gap: 20px;
+}
+.section_1 .main .container_content_leonardo nav .link_social_media {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: #353535;
+  color: #ffffff !important;
+}
+.section_1 .main .container_content_leonardo nav .link_social_media i {
+  font-size: 18px;
+}
+@media (min-width: 982px) {
+  .section_1 .main .container_content_leonardo nav .link_social_media {
+    width: 3vw;
+    height: 3vw;
+  }
+}
+.section_1 .main .container_content_leonardo .cv_btn {
+  font-size: 12px;
+  font-weight: 600;
+}
+@media (min-width: 982px) {
+  .section_1 .main .container_content_leonardo .cv_btn {
+    font-size: 1vw;
+  }
+}
+.section_1 .main .container_content_leonardo .port_btn {
+  gap: 5px;
+  border-radius: 10px;
+  background: #3c5bff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  width: 151px;
+  height: 41px;
+}
+.section_1 .main .container_content_leonardo .port_btn svg {
+  width: 26px;
+}
+@media (min-width: 982px) {
+  .section_1 .main .container_content_leonardo .port_btn {
+    font-size: 1vw;
+  }
+}
+.section_1 .main .container_img_leonardo {
+  position: relative;
+  background-color: #202020;
+}
+.section_1 .main .container_img_leonardo img {
+  position: relative;
+  overflow: visible;
+  width: 20vw;
+  object-fit: cover;
+  bottom: 0px;
+}
+@media (min-width: 1200px) {
+  .section_1 {
+    height: 100vh !important;
+    overflow-y: hidden !important;
+  }
+  .section_1 .main .container_content_leonardo {
+    height: 100vh;
+    min-width: 45vw;
+    padding-left: 10vw !important;
+    position: relative;
+  }
+  .section_1 .main .container_content_leonardo * {
+    position: relative;
+    z-index: 50;
+  }
+  .section_1 .main .container_content_leonardo::before {
+    content: "";
+    height: 250vh;
+    background-color: #202020;
+    min-width: 50vw;
+    transform: rotate(-28deg);
+    right: -17vw;
+    position: absolute;
+    z-index: 10 !important;
+  }
+  .section_1 .main .container_content_leonardo .title_container .name::after {
+    width: 100%;
+    left: 25%;
+  }
+  .section_1 .main .container_img_leonardo {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 20;
+    z-index: 1;
+    bottom: 0;
+    min-width: 50vw;
+    inset: 0;
+    background-color: #3f3f3f;
+  }
+  .section_1 .main .container_img_leonardo img {
+    width: unset;
+    position: absolute;
+    overflow: visible;
+    min-height: 700px;
+    height: 100vh;
+    max-height: 100vh;
+    object-fit: cover;
+    left: 40%;
+    bottom: -100px;
+  }
+}
+@media (max-width: 1400px) {
+  .section_1 .main .container_img_leonardo img {
+    min-height: 670px;
+    min-height: 110vh !important;
+    height: 110vh !important;
+  }
+  .section_1 .main .container_content_leonardo::before {
+    right: -14vw !important;
+  }
+}
+@media (min-width: 1400px) {
+  .section_1 .main .container_content_leonardo::before {
+    right: -12vw !important;
+  }
+}
+
+.section_2 {
+  background-color: #161616;
+  min-height: 100vh;
+  position: relative;
+  z-index: 999;
+}
+
+/*# sourceMappingURL=style.css.map */

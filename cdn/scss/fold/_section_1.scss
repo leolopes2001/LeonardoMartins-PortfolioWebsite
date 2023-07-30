@@ -1,0 +1,254 @@
+.section_1 {
+  background-color: $grey7;
+  max-height: 1100px;
+  overflow: hidden;
+  min-height: 100vh;
+
+  .header nav {
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999999999;
+    top: 2vw;
+    // gap: 55px;
+    gap: 5vw;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-size: 1vw;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+  .main {
+    .container_content_leonardo {
+      background-color: $grey3;
+      z-index: 30 !important;
+      position: relative;
+
+      .title_container {
+        .name {
+          color: $primary;
+          font-weight: 800;
+          font-size: clamp(24px, 8vw, 38px) !important;
+          position: relative;
+          margin-bottom: 0.7rem !important;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 80%;
+            max-width: 478px;
+            // max-width: 24vw;
+            bottom: -7px;
+            left: 60px;
+            height: 4px;
+            background-color: $primary;
+          }
+
+          @media (min-width: 982px) {
+            font-size: 2.5vw !important;
+            margin-bottom: 0.6vw !important;
+
+            &::after {
+              width: 80%;
+              // max-width: 378px;
+              max-width: 24vw;
+              bottom: -0.5vw;
+              left: 60px;
+              height: 0.3vw;
+              background-color: $primary;
+            }
+          }
+        }
+
+        .work {
+          font-size: clamp(24px, 8vw, 38px) !important;
+          color: $white-fixed;
+          font-weight: 700 !important;
+
+          @media (min-width: 982px) {
+            font-size: 2.6vw !important;
+          }
+        }
+      }
+
+      .container_about p {
+        color: #8f8f8f;
+        font-size: clamp(10px, 4vw, 15px);
+        font-weight: 500;
+        margin-top: 1vh !important;
+        margin-bottom: 2vh !important;
+        max-width: 396px;
+
+        @media (min-width: 982px) {
+          font-size: 1vw !important;
+          max-width: 25vw;
+        }
+      }
+
+      nav {
+        gap: 20px;
+
+        .link_social_media {
+          width: 51px;
+          height: 51px;
+
+          border-radius: 50%;
+          background-color: #353535;
+          color: $white-fixed !important;
+          @extend .center;
+          i {
+            font-size: 18px;
+          }
+
+          @media (min-width: 982px) {
+            width: 3vw;
+            height: 3vw;
+          }
+        }
+      }
+
+      .cv_btn {
+        font-size: 12px;
+        font-weight: 600;
+
+        @extend .center;
+
+        @media (min-width: 982px) {
+          font-size: 1vw;
+        }
+      }
+
+      .port_btn {
+        gap: 5px;
+        border-radius: 10px;
+        background: $primary;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        width: 151px;
+        // padding: 10px 3rem !important;
+        height: 41px;
+
+        svg {
+          width: 26px;
+        }
+
+        @media (min-width: 982px) {
+          font-size: 1vw;
+        }
+      }
+    }
+
+    .container_img_leonardo {
+      position: relative;
+      background-color: $grey3;
+      img {
+        position: relative;
+        overflow: visible;
+        width: 20vw;
+        object-fit: cover;
+        bottom: 0px;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    height: 100vh !important;
+    overflow-y: hidden !important;
+
+    .main {
+      .container_content_leonardo {
+        height: 100vh;
+        min-width: 45vw;
+        padding-left: 10vw !important;
+        position: relative;
+        * {
+          position: relative;
+          z-index: 50;
+        }
+        &::before {
+          content: "";
+          height: 250vh;
+          background-color: $grey3;
+          min-width: 50vw;
+          transform: rotate(-28deg);
+          right: -17vw;
+          position: absolute;
+          z-index: 10 !important;
+        }
+        .title_container .name::after {
+          width: 100%;
+          left: 25%;
+        }
+      }
+      .container_img_leonardo {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        z-index: 20;
+        z-index: 1;
+        bottom: 0;
+        min-width: 50vw;
+        // left: 40%;
+        inset: 0;
+
+        background-color: $grey7;
+      }
+
+      .container_img_leonardo img {
+        width: unset;
+        position: absolute;
+        overflow: visible;
+        min-height: 700px;
+        height: 100vh;
+        max-height: 100vh;
+        object-fit: cover;
+        left: 40%;
+        bottom: -100px;
+      }
+    }
+  }
+
+  @media (max-width: 1400px) {
+    // *{
+    //   background-color: red !important;
+    // }
+
+    .main {
+      .container_img_leonardo img {
+        min-height: 670px;
+        min-height: 110vh !important;
+        height: 110vh !important;
+      }
+
+      .container_content_leonardo {
+        &::before {
+          right: -14vw !important;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .main {
+      .container_content_leonardo {
+        &::before {
+          right: -12vw !important;
+        }
+      }
+    }
+  }
+}
+
+.section_2 {
+  background-color: #161616;
+
+  min-height: 100vh;
+  position: relative;
+  z-index: 999;
+}
