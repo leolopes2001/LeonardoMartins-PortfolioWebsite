@@ -36,7 +36,7 @@ button {
 }
 
 .section_1 {
-  background-color: #3f3f3f;
+  background-color: #202020;
   max-height: 1100px;
   overflow: hidden;
   min-height: 100vh;
@@ -72,25 +72,38 @@ button {
 .section_1 .main .container_content_leonardo .title_container .name::after {
   content: "";
   position: absolute;
-  width: 80%;
-  max-width: 478px;
+  width: 90%;
   bottom: -7px;
   left: 60px;
   height: 4px;
   background-color: #3c5bff;
 }
 @media (min-width: 982px) {
+  .section_1 .main .container_content_leonardo .title_container .name::after {
+    width: 90%;
+    left: 60px;
+    height: 4px;
+    background-color: #3c5bff;
+  }
+}
+@media (min-width: 1300px) {
+  .section_1 .main .container_content_leonardo .title_container .name::after {
+    width: 24vw;
+    max-width: 24vw;
+    left: 60px;
+    height: 4px;
+  }
+}
+@media (min-width: 1400px) {
   .section_1 .main .container_content_leonardo .title_container .name {
     font-size: 2.5vw !important;
-    margin-bottom: 0.6vw !important;
+    font-size: 3rem !important;
   }
   .section_1 .main .container_content_leonardo .title_container .name::after {
-    width: 80%;
-    max-width: 24vw;
-    bottom: -0.5vw;
+    width: 22vw;
+    max-width: 22vw;
     left: 60px;
-    height: 0.3vw;
-    background-color: #3c5bff;
+    height: 6px;
   }
 }
 .section_1 .main .container_content_leonardo .title_container .work {
@@ -98,9 +111,10 @@ button {
   color: #ffffff;
   font-weight: 700 !important;
 }
-@media (min-width: 982px) {
+@media (min-width: 1400px) {
   .section_1 .main .container_content_leonardo .title_container .work {
     font-size: 2.6vw !important;
+    font-size: 3rem !important;
   }
 }
 .section_1 .main .container_content_leonardo .container_about p {
@@ -111,9 +125,9 @@ button {
   margin-bottom: 2vh !important;
   max-width: 396px;
 }
-@media (min-width: 982px) {
+@media (min-width: 1400px) {
   .section_1 .main .container_content_leonardo .container_about p {
-    font-size: 1vw !important;
+    font-size: 1.2rem !important;
     max-width: 25vw;
   }
 }
@@ -130,19 +144,19 @@ button {
 .section_1 .main .container_content_leonardo nav .link_social_media i {
   font-size: 18px;
 }
-@media (min-width: 982px) {
+@media (min-width: 1400px) {
   .section_1 .main .container_content_leonardo nav .link_social_media {
-    width: 3vw;
-    height: 3vw;
+    width: 51px;
+    height: 51px;
   }
 }
 .section_1 .main .container_content_leonardo .cv_btn {
   font-size: 12px;
   font-weight: 600;
 }
-@media (min-width: 982px) {
+@media (min-width: 1400px) {
   .section_1 .main .container_content_leonardo .cv_btn {
-    font-size: 1vw;
+    font-size: 1rem;
   }
 }
 .section_1 .main .container_content_leonardo .port_btn {
@@ -153,14 +167,13 @@ button {
   font-style: normal;
   font-weight: 600;
   width: 151px;
-  height: 41px;
 }
 .section_1 .main .container_content_leonardo .port_btn svg {
   width: 26px;
 }
-@media (min-width: 982px) {
+@media (min-width: 1400px) {
   .section_1 .main .container_content_leonardo .port_btn {
-    font-size: 1vw;
+    font-size: 1rem;
   }
 }
 .section_1 .main .container_img_leonardo {
@@ -172,7 +185,7 @@ button {
 .section_1 .main .container_img_leonardo img {
   position: relative;
   overflow: visible !important;
-  bottom: 0vh !important;
+  bottom: 0 !important;
   left: 0vw;
   transform: translateX(-40%);
 }
@@ -214,6 +227,7 @@ button {
     bottom: 0;
     min-width: 50vw;
     inset: 0;
+    max-height: unset;
     background-color: #3f3f3f;
   }
   .section_1 .main .container_img_leonardo img {
@@ -225,7 +239,8 @@ button {
     max-height: 100vh;
     object-fit: cover;
     left: 40%;
-    bottom: -100px;
+    bottom: -100px !important;
+    transform: unset;
   }
 }
 @media (max-width: 1400px) {

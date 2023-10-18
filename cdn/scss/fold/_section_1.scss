@@ -1,5 +1,5 @@
 .section_1 {
-  background-color: $grey7;
+  background-color: $grey3;
   max-height: 1100px;
   overflow: hidden;
   min-height: 100vh;
@@ -40,8 +40,8 @@
           &::after {
             content: "";
             position: absolute;
-            width: 80%;
-            max-width: 478px;
+            width: 90%;
+            // max-width: 478px;
             // max-width: 24vw;
             bottom: -7px;
             left: 60px;
@@ -50,17 +50,51 @@
           }
 
           @media (min-width: 982px) {
-            font-size: 2.5vw !important;
-            margin-bottom: 0.6vw !important;
+            // font-size: 2.5vw !important;
+            // margin-bottom: 0.6vw !important;
 
             &::after {
-              width: 80%;
+              width: 90%;
               // max-width: 378px;
-              max-width: 24vw;
-              bottom: -0.5vw;
+              // max-width: 26vw;
+              // bottom: -0.5vw;
               left: 60px;
-              height: 0.3vw;
+              // height: 0.3vw;
+              height: 4px;
               background-color: $primary;
+            }
+          }
+
+          @media (min-width: 1300px) {
+            // font-size: 2.5vw !important;
+            // margin-bottom: 0.6vw !important;
+
+            &::after {
+              width: 24vw;
+              max-width: 24vw;
+              // max-width: 378px;
+              // max-width: 10vw;
+              // bottom: -0.5vw;
+              left: 60px;
+              // height: 0.3vw;
+              height: 4px;
+            }
+          }
+
+          @media (min-width: 1400px) {
+            font-size: 2.5vw !important;
+            font-size: 3rem !important;
+            // margin-bottom: 0.6vw !important;
+
+            &::after {
+              width: 22vw;
+              max-width: 22vw;
+              // max-width: 378px;
+              // max-width: 10vw;
+              // bottom: -0.5vw;
+              left: 60px;
+              // height: 0.3vw;
+              height: 6px;
             }
           }
         }
@@ -71,7 +105,12 @@
           font-weight: 700 !important;
 
           @media (min-width: 982px) {
+            // font-size: 2.6vw !important;
+          }
+
+          @media (min-width: 1400px) {
             font-size: 2.6vw !important;
+            font-size: 3rem !important;
           }
         }
       }
@@ -85,7 +124,12 @@
         max-width: 396px;
 
         @media (min-width: 982px) {
-          font-size: 1vw !important;
+          // font-size: 1vw !important;
+          // max-width: 25vw;
+        }
+
+        @media (min-width: 1400px) {
+          font-size: 1.2rem !important;
           max-width: 25vw;
         }
       }
@@ -106,8 +150,16 @@
           }
 
           @media (min-width: 982px) {
-            width: 3vw;
-            height: 3vw;
+            // width: 3vw;
+            // height: 3vw;
+          }
+
+          @media (min-width: 1400px) {
+            // width: 3vw;
+            // height: 3vw;
+
+            width: 51px;
+            height: 51px;
           }
         }
       }
@@ -119,7 +171,11 @@
         @extend .center;
 
         @media (min-width: 982px) {
-          font-size: 1vw;
+          // font-size: 1vw;
+        }
+
+        @media (min-width: 1400px) {
+          font-size: 1rem;
         }
       }
 
@@ -132,14 +188,14 @@
         font-weight: 600;
         width: 151px;
         // padding: 10px 3rem !important;
-        height: 41px;
+        // height: 41px;
 
         svg {
           width: 26px;
         }
 
-        @media (min-width: 982px) {
-          font-size: 1vw;
+        @media (min-width: 1400px) {
+          font-size: 1rem;
         }
       }
     }
@@ -155,7 +211,7 @@
         // width: 100vw ;
         // min-width: 100vw;
         // object-fit: cover;
-        bottom: 0vh !important;
+        bottom: 0 !important;
         left: 0vw;
         transform: translateX(-40%);
       }
@@ -201,7 +257,7 @@
         min-width: 50vw;
         // left: 40%;
         inset: 0;
-
+        max-height: unset;
         background-color: $grey7;
       }
 
@@ -214,7 +270,8 @@
         max-height: 100vh;
         object-fit: cover;
         left: 40%;
-        bottom: -100px;
+        bottom: -100px !important;
+        transform: unset;
       }
     }
   }
