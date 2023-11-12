@@ -1,0 +1,43 @@
+.section_4 {
+  
+  background-color: $grey2;
+ 
+  ul {
+    gap: 68px;
+    margin-top: 52px !important;
+  }
+  .title_section {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .date {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .title {
+    color: #006bff;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .location {
+    color: #c1c1c1;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}

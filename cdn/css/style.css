@@ -261,9 +261,101 @@ button {
 
 .section_2 {
   background-color: #161616;
+  padding-top: 146px !important;
+  padding-bottom: 146px !important;
   min-height: 100vh;
   position: relative;
   z-index: 999;
+}
+.section_2 .container_title {
+  margin-bottom: 76px !important;
+}
+.section_2 .container_title h6 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.section_2 .container_title::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3c5bff;
+}
+.section_2 .container_about_me {
+  max-width: 942px;
+}
+.section_2 .container_about_me p {
+  font-weight: 500;
+  font-size: clamp(20px, 2vw, 50px);
+  line-height: normal;
+  color: #8f8f8f;
+}
+.section_2 .container_about_me p span {
+  color: #3c5bff;
+}
+@media (min-width: 1400px) {
+  .section_2 .container_about_me {
+    max-width: 1242px;
+  }
+}
+
+.section_3 {
+  background-color: #272727;
+}
+.section_3 ul li img {
+  width: 80px;
+  height: 80px;
+  transition: all 200ms;
+  cursor: pointer;
+}
+.section_3 ul li img:hover {
+  margin: 0 1rem !important;
+  transform: scale(1.2);
+}
+.section_3 ul li:first-child img:hover {
+  margin-right: 1rem !important;
+}
+
+.section_4 {
+  background-color: #1d1d1d;
+}
+.section_4 ul {
+  gap: 68px;
+  margin-top: 52px !important;
+}
+.section_4 .title_section {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.section_4 .date {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.section_4 .title {
+  color: #006bff;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.section_4 .location {
+  color: #c1c1c1;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

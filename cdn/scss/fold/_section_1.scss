@@ -309,8 +309,50 @@
 
 .section_2 {
   background-color: #161616;
-
+  padding-top: 146px !important;
+  padding-bottom: 146px !important;
   min-height: 100vh;
   position: relative;
   z-index: 999;
+
+  .container_title{
+    margin-bottom: 76px !important;
+    h6{
+      font-size: 50px;
+      font-weight: 800;
+
+    }
+    
+    &::after{
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $primary;
+    }
+  }
+
+  .container_about_me{
+    max-width: 942px;
+    
+    p{
+      font-weight: 500;
+      font-size: clamp(20px, 2vw, 50px);
+      line-height: normal;
+      color: $grey9;
+
+      span{
+        color: $primary;
+      }
+    }
+
+    @media (min-width: 1400px){
+      max-width: 1242px;
+    }
+  }
 }
+
+
+
