@@ -304,6 +304,9 @@ button {
 .section_3 {
   background-color: #272727;
 }
+.section_3 ul li {
+  margin: 0.5rem !important;
+}
 .section_3 ul li img {
   width: 80px;
   height: 80px;
@@ -311,11 +314,7 @@ button {
   cursor: pointer;
 }
 .section_3 ul li img:hover {
-  margin: 0 1rem !important;
   transform: scale(1.2);
-}
-.section_3 ul li:first-child img:hover {
-  margin-right: 1rem !important;
 }
 
 .section_4 {

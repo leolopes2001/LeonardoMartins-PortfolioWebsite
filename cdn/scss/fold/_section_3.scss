@@ -1,21 +1,20 @@
 .section_3{
-  
-  
     background-color: $grey4;
-   
+    ul li{
+        margin: .5rem !important;
+    }
     ul li img{
         width: 80px;
         height: 80px;
         transition: all 200ms;
         cursor: pointer;
+        
     }
 
     ul li img:hover{
-        margin: 0 1rem !important;
+        // margin: 0 1rem !important;
         transform: scale(1.2);
     }
 
-    ul li:first-child img:hover{
-        margin-right: 1rem !important;
-    }
+
 }
