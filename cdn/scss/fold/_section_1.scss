@@ -138,13 +138,18 @@
         gap: 20px;
 
         .link_social_media {
+          @extend .center;
           width: 51px;
           height: 51px;
 
           border-radius: 50%;
           background-color: #353535;
           color: $white-fixed !important;
-          @extend .center;
+          transition: all 200ms;
+          &:hover{
+            transform: scale(1.2);
+          }
+          
           i {
             font-size: 18px;
           }
@@ -162,6 +167,8 @@
             height: 51px;
           }
         }
+
+
       }
 
       .cv_btn {
@@ -309,14 +316,15 @@
 
 .section_2 {
   background-color: #161616;
-  padding-top: 146px !important;
-  padding-bottom: 146px !important;
-  min-height: 100vh;
+  padding-top: 106px !important;
+  padding-bottom: 120px !important;
+  // min-height: 100vh;
   position: relative;
   z-index: 999;
 
   .container_title{
     margin-bottom: 76px !important;
+
     h6{
       font-size: 50px;
       font-weight: 800;
@@ -335,11 +343,11 @@
   }
 
   .container_about_me{
-    max-width: 942px;
+    max-width: 1042px !important;
     
     p{
       font-weight: 500;
-      font-size: clamp(20px, 2vw, 50px);
+      font-size: clamp(20px, 2vw, 30px);
       line-height: normal;
       color: $grey9;
 
