@@ -72,11 +72,7 @@
             &::after {
               width: 24vw;
               max-width: 24vw;
-              // max-width: 378px;
-              // max-width: 10vw;
-              // bottom: -0.5vw;
               left: 60px;
-              // height: 0.3vw;
               height: 4px;
             }
           }
@@ -115,6 +111,7 @@
         }
       }
 
+      
       .container_about p {
         color: #8f8f8f;
         font-size: clamp(10px, 4vw, 15px);
@@ -284,9 +281,7 @@
   }
 
   @media (max-width: 1400px) {
-    // *{
-    //   background-color: red !important;
-    // }
+ 
 
     .main {
       .container_img_leonardo img {
