@@ -43,6 +43,10 @@ button {
   color: #ffffff !important;
 }
 
+.swiper-scrollbar {
+  display: none !important;
+}
+
 .section_1 {
   background-color: #202020;
   max-height: 1100px;
@@ -402,6 +406,9 @@ button {
   border-radius: 18px;
   border-radius: 18px !important;
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.16);
+}
+.section_5 .swiper-slide a.btn-primary {
+  font-weight: 500 !important;
 }
 .section_5 .swiper-slide-container-content {
   background-color: #272727;
