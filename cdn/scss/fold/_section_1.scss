@@ -20,6 +20,12 @@
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+      transition: all 300ms;
+    }
+
+    a:hover{
+      transform: translateY(-4px) ;
+      color: $primary;
     }
   }
 

@@ -68,6 +68,11 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: all 300ms;
+}
+.section_1 .header nav a:hover {
+  transform: translateY(-4px);
+  color: #3c5bff;
 }
 .section_1 .main .container_content_leonardo {
   background-color: #202020;
