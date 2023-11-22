@@ -26,14 +26,16 @@
   .swiper {
     /* width: 600px; */
     height: 601px;
-    min-width: 412px;
+    // max-width: 412px;
+   
     border-radius: 18px !important;
     // background-color: $grey4;
   }
 
   .swiper-slide {
     height: 501px;
-    width: 412px;
+    width: 100%;
+    max-width: 412px;
     background-color: $grey4;
     border-radius: 18px;
     border-radius: 18px !important;

@@ -401,12 +401,12 @@ button {
 .section_5 .swiper {
   /* width: 600px; */
   height: 601px;
-  min-width: 412px;
   border-radius: 18px !important;
 }
 .section_5 .swiper-slide {
   height: 501px;
-  width: 412px;
+  width: 100%;
+  max-width: 412px;
   background-color: #272727;
   border-radius: 18px;
   border-radius: 18px !important;
