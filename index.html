@@ -48,7 +48,7 @@
           </p>
         </div>
         <div class="d-flex gap-4 mb-5 mb-xl-1 mb-xxl-3">
-          <a href="/full-stack-leonardo-curriculo.docx" href="/full-stack-leonardo-curriculo.docx"  class="btn cv_btn center border-0" data-aos="fade-right" style="gap: 12px;">
+          <a href="/curriculo-leonardo-full-stack.docx.pdf" download="/curriculo-leonardo-full-stack.docx.pdf" class="btn cv_btn center border-0" data-aos="fade-right" style="gap: 12px;">
             <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1506_319)">
                 <path
@@ -63,14 +63,6 @@
             </svg>
             Download CV
           </a>
-          <!-- <button class="btn port_btn center" data-aos="fade-right">
-            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M17.4998 32.0833C9.44568 32.0833 2.9165 25.5541 2.9165 17.5C2.9165 9.44584 9.44568 2.91666 17.4998 2.91666C25.554 2.91666 32.0832 9.44584 32.0832 17.5C32.0743 25.5505 25.5503 32.0745 17.4998 32.0833ZM17.4998 5.83332C11.0565 5.83332 5.83317 11.0567 5.83317 17.5C5.83317 23.9433 11.0565 29.1667 17.4998 29.1667C23.9432 29.1667 29.1665 23.9433 29.1665 17.5C29.1593 11.0597 23.9402 5.84056 17.4998 5.83332ZM17.4998 24.7917L10.2082 17.5L12.2644 15.4437L16.0415 19.2062V10.2083H18.9582V19.2062L22.7353 15.4437L24.7915 17.5L17.4998 24.7917Z"
-                fill="white" />
-            </svg>
-            Portfolio
-          </button> -->
         </div>
         <nav class="d-flex mt-3" data-aos="fade-up-right">
           <a href="https://github.com/leolopes2001" target="_blank" class="link_social_media" >
@@ -103,10 +95,6 @@
 
       <div class="container_about_me mx-auto px-4">
         <p class="mb-5" data-aos="fade-up">
-          <!-- I'm <span>Leonardo Martins</span>, I'm <span>22</span> years old and I live in <span>Mateus Leme</span> -MG.
-          <span>Front-end developer</span> and <span>UI Designer</span>, I'm passionate about interfaces, from their
-          creation to development. I like to learn more and more about the area, challenges that take me out of my
-          comfort zone are the best. -->
 
           Meu nome é <span> Leonardo Martins</span>. Tenho <span>22</span> anos e resido em <span>Mateus Leme - MG</span>.
           Sou Desenvolvedor <span>Full Stack</span> com ênfase em desenvolvimento <span>Front End</span>.
@@ -115,7 +103,7 @@
 
         <p data-aos="fade-up">
           Tenho um alto grau de competência em projetar, desenvolver e manter <span>
-            CRMs, Landing Pages, E-mails Marketing
+            CRMs, ERPs, Gateways de Pagamento
           </span> e <span>Websites em geral</span>.
         </p>
       </div>
@@ -274,6 +262,16 @@
       <div data-aos="fade-up">
         <h4 class="title_section">Experiências</h4>
         <ul class="list-unstyled d-flex flex-column ">
+          <li>
+            <p class="date">Dez 2023 - Jun 2024</p>
+            <h6 class="title">FullStack Developer</h6>
+            <span class="location">Zievo Tecnologia</span>
+            <button class="btn btn-outline-primary d-block  mt-2" onclick="handleExperienceClick('zievo')"
+              style="padding: 5px 13px !important;">
+              <i class="bi bi-info-circle " style="margin-right: 4px !important;"></i>
+              Saiba mais
+            </button>
+          </li>
           <li>
             <p class="date">Jan 2023 - Atual</p>
             <h6 class="title">Front End Developer</h6>
@@ -602,7 +600,11 @@
       Curso de 2.000 horas de Desenvolvimento Full Stack que abrange tecnologias Front End e Back End além de soft skills necessários para o mercado de trabalho.
       <br>
 Entre as linguagens e tecnologias aprendidas, estão HTML5, CSS3, JavaScript (ES6+), React, Redux, Python (Django e Flask) e SQL.
-      `]
+      `],
+      "zievo": [
+        'FullStack Developer', 
+      "Responsável pela criação de landing pages otimizadas, implementação de gateways de pagamento para o software WHMCS e desenvolvimento de sistema ERP."
+      ]
     }
 
     const title = document.querySelector(".modal-title")
