@@ -48,7 +48,7 @@
           </p>
         </div>
         <div class="d-flex gap-4 mb-5 mb-xl-1 mb-xxl-3">
-          <a href="/curriculo-leonardo-full-stack.docx.pdf" download="/curriculo-leonardo-full-stack.docx.pdf" class="btn cv_btn center border-0" data-aos="fade-right" style="gap: 12px;">
+          <a href="/leonardo_dev.pdf" download="/curriculo-leonardo-full-stack.docx.pdf" class="btn cv_btn center border-0" data-aos="fade-right" style="gap: 12px;">
             <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1506_319)">
                 <path
@@ -96,14 +96,14 @@
       <div class="container_about_me mx-auto px-4">
         <p class="mb-5" data-aos="fade-up">
 
-          Meu nome é <span> Leonardo Martins</span>. Tenho <span>22</span> anos e resido em <span>Mateus Leme - MG</span>.
+          Meu nome é <span> Leonardo Martins</span>. Tenho <span>23</span> anos e resido em <span>Mateus Leme - MG</span>.
           Sou Desenvolvedor <span>Full Stack</span> com ênfase em desenvolvimento <span>Front End</span>.
           Possuo habilidades abrangentes que abraçam tanto a arquitetura quanto a interface do usuário. Busco continuamente aprimorar a experiência do usuário em todos os projetos, destacando-me pela paixão e dedicação ao desenvolvimento web.
         </p>
 
         <p data-aos="fade-up">
           Tenho um alto grau de competência em projetar, desenvolver e manter <span>
-            CRMs, ERPs, Gateways de Pagamento
+            CRMs, ERPs, Chatbots, Gateways de Pagamento
           </span> e <span>Websites em geral</span>.
         </p>
       </div>
@@ -205,6 +205,9 @@
         <h3 class="text-white mb-2">Ferramentas</h3>
         <ul class="list-unstyled d-flex  align-items-center  flex-wrap">
           <li>
+            <img src="https://skillicons.dev/icons?i=aws" alt="">
+          </li>
+          <li>
             <img src="https://skillicons.dev/icons?i=docker" alt="">
           </li>
           <li>
@@ -263,8 +266,18 @@
         <h4 class="title_section">Experiências</h4>
         <ul class="list-unstyled d-flex flex-column ">
           <li>
+            <p class="date">Set 2023 - Atual</p>
+            <h6 class="title">Programador de sistemas</h6>
+            <span class="location">UmCliqueDigital</span>
+            <button class="btn btn-outline-primary d-block  mt-2" onclick="handleExperienceClick('umcliquedigital')"
+              style="padding: 5px 13px !important;">
+              <i class="bi bi-info-circle " style="margin-right: 4px !important;"></i>
+              Saiba mais
+            </button>
+          </li>
+          <li>
             <p class="date">Dez 2023 - Jun 2024</p>
-            <h6 class="title">FullStack Developer</h6>
+            <h6 class="title">Programador de sistemas</h6>
             <span class="location">Zievo Tecnologia</span>
             <button class="btn btn-outline-primary d-block  mt-2" onclick="handleExperienceClick('zievo')"
               style="padding: 5px 13px !important;">
@@ -274,7 +287,7 @@
           </li>
           <li>
             <p class="date">Jan 2023 - Dez 2023</p>
-            <h6 class="title">Front End Developer</h6>
+            <h6 class="title">Programador de sistemas</h6>
             <span class="location">Health CRM</span>
             <button class="btn btn-outline-primary d-block  mt-2" onclick="handleExperienceClick('ggs')"
               style="padding: 5px 13px !important;">
@@ -508,7 +521,7 @@
   </section>
 
   <footer class="footer py-5  text-center px-3">
-    <p class="text-white fw-medium">© 2023 Leonardo Martins All rights reserved</p>
+    <p class="text-white fw-medium">© 2022 Leonardo Martins All rights reserved</p>
   </footer>
 
 
@@ -627,7 +640,11 @@ Entre as linguagens e tecnologias aprendidas, estão HTML5, CSS3, JavaScript (ES
       "zievo": [
         'FullStack Developer', 
       "Responsável pela criação de landing pages otimizadas, implementação de gateways de pagamento para o software WHMCS e desenvolvimento de sistema ERP."
-      ]
+      ],
+      "umcliquedigital": [
+        'FullStack Developer', 
+      "Responsável pela criação de sistemas de automação de WhatsApp, integrações com gateways de pagamento e chatbots, utilizando React, Node.js, Docker, Laravel e AWS."
+      ],
     }
 
     const title = document.querySelector(".modal-title")
